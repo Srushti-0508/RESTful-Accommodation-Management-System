@@ -45,7 +45,7 @@ public class DistanceCalc {
         parameters.put("origins", origins);
         parameters.put("destinations", destinations);
         parameters.put("mode", "walking");
-        parameters.put("key", "AIzaSyDajHZ2hhXzG7iYZ4IofvG3OPn32hRhSsE");
+        parameters.put("key", "");
 
         // Convert parameters to String
        String convertedParamsToString = parameters.entrySet().stream()
