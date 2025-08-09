@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name ="viewport" content="width = device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="rooms.css">
+        <script type="text/javascript" src="rooms.js" defer></script>
+
+        <title>Global Dorm Rooms</title>
+    </head>
+    <body>
+        
+    <header>
+        <h1 id="bodyh1">Global Dorm Rooms</h1>
+    </header>
+
+    <div class="container">
+        <div class="header">
+        <h2> Find Rooms In Budget</h2>
+        <button id="search" type="button">Search for Available Rooms</button>
+    </div>
+        <div class="roomListing">
+            
+        </div>
+    </div>
+    <h1 id="bodyh1">Process Request for Rooms</h1>
+    <p>To apply or cancel your room applications, please fill in the forms.</p>
+    <div class="app_container">
+        
+        <div class="apply_form">
+            
+            <form id="applyInfo">
+                <h2>Apply Room</h2>
+                <p>To apply for room please enter the valid Room ID provided in Room Details and your User ID</p>
+                <label for="roomId">Enter Room ID</label><br>
+                <input type="text" id="roomId" name="roomId" value="" required="required"><br>
+                <label for="userId">Enter User ID</label><br>
+                <input type="text" id="userId" name="userId" value="" required="required"><br><br>
+                <button type="submit">Apply</button>
+            </form>
+        </div>
+
+        <div class="cancel_form">
+            <form id="cancelInfo">
+                <h2>Cancel Room</h2>
+                <p>To cancel for room please enter the valid Room ID and your User ID used to make application</p>
+                <label for="croomId">Enter Room ID</label><br>
+                <input type="text" id="croomId" name="croomId" value="" required="required"><br>
+                <label for="cuserId">Enter User ID</label><br>
+                <input type="text" id="cuserId" name="cuserId" value="" required="required"><br><br>
+                <button type="submit">Cancel Application</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="history_container">
+        <h1 id="bodyh1">View Recent/Previous Application Status</h1>
+        
+        <div class="hist_form">
+            <p>Enter your User ID to view your application status</p>
+            <form id="histInfo">
+                <h2> View Application Status</h2>
+                <label for="huserId">Enter User ID</label><br>
+                <input type="text" id="huserId" name="huserId" value="" required="required"><br><br>
+                <button type="submit">View</button>
+            </form>
+            </div>
+    <div class="histDisplay"></div>
+    
+
+    <div class="calc_container">
+        <h1 id="bodyh1">Distance Calculator</h1>
+        <p>Enter Details to get walking distance</p>
+        <div class="distance">
+            
+            <form id="distanceInfo">
+                <h2> Calculate Distance</h2>
+                <p>Enter Origin and Destination details</p>
+                <label for="origins">Enter Origin</label><br>
+                <input type="text" id="origins" name="origins" value="" required="required"><br>
+                <label for="destinations">Enter Destinations</label><br>
+                <input type="text" id="destinations" name="destinations" value="" required="required"><br><br>
+                <button type="submit">Calculate Distance</button>
+            </form>
+    <div class="distanceDisplay"></div>
+
+    </div>
+    </div>
+    </body>
+
+
+
+</html>
